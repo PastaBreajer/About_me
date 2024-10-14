@@ -4,26 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://example.com/your-background-image.jpg') no-repeat center center fixed; /* Custom background */
+            background-size: cover;
+            color: white;
+        }
+
+        /* Container Styles */
+        .container {
+            background: rgba(0, 0, 0, 0.75); /* Transparent dark background for contrast */
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Heading Styles */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #00d4ff; /* Custom light blue color */
+        }
+
+        /* Paragraph Styles */
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* Button Container */
+        .buttons {
+            margin-top: 20px;
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .discord {
+            background-color: #7289da;
+        }
+        .discord:hover {
+            background-color: #5b6fbd;
+            box-shadow: 0 4px 12px rgba(114, 137, 218, 0.6);
+        }
+
+        .tiktok {
+            background-color: #000000;
+        }
+        .tiktok:hover {
+            background-color: #292929;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        .youtube {
+            background-color: #FF0000;
+        }
+        .youtube:hover {
+            background-color: #cc0000;
+            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.6);
+        }
+
+        /* Icon Styles */
+        .icons {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>About Me</h1>
-        <p>Hi! I'm Thehvgwhoo, and here's what I do:</p>
-        <div class="card">
-            <ul>
-                <li>Minecraft Addons Coder</li>
-                <li>Minecraft Server Developer</li>
-                <li>Former Staff at Laurel Hosting (Closed)</li>
-                <li>3D Model & Minecraft Bedrock Texture Pack Maker</li>
-            </ul>
+        <p>Hello! I'm a passionate Minecraft server developer, Bedrock addon creator, and texture pack maker. I've worked on multiple projects and was previously part of the team at Leaurel Hosting (closed).</p>
+        
+        <!-- Buttons Section -->
+        <div class="buttons">
+            <!-- Discord Button -->
+            <a href="#" class="button discord">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/discord.svg" alt="Discord Logo" class="icons" width="24">
+                Username#1234
+            </a>
+
+            <!-- TikTok Button -->
+            <a href="https://www.tiktok.com/@your_tiktok" class="button tiktok">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/tiktok.svg" alt="TikTok Logo" class="icons" width="24">
+                TikTok
+            </a>
+
+            <!-- YouTube Button -->
+            <a href="https://www.youtube.com/channel/your_channel" class="button youtube">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" alt="YouTube Logo" class="icons" width="24">
+                YouTube
+            </a>
         </div>
+
+        <!-- Additional Info Section -->
+        <p>I specialize in:</p>
+        <ul>
+            <li>Minecraft server development</li>
+            <li>Minecraft Bedrock addon creation</li>
+            <li>Minecraft texture pack design</li>
+            <li>Former staff at Leaurel Hosting</li>
+        </ul>
     </div>
-    <div id="reload-animation">🔄</div>
-    <script>
-        document.getElementById('reload-animation').onclick = function() {
-            location.reload();
-        };
-    </script>
 </body>
 </html>
